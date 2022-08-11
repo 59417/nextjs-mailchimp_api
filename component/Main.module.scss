@@ -1,0 +1,114 @@
+.container {
+    padding: 1rem;
+    width: 100%;
+
+    .step {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid rgb(60, 60, 60);
+        width: 100%;
+
+        button {
+            border: none;
+            border-radius: 5px;
+            margin: 1rem;
+            background-color:seagreen;
+            color:rgb(190, 203, 190);
+            font-weight: 700;
+            flex: 1;
+        }
+
+        .auto_btn {
+            width: 150px;
+            min-height: 3rem;
+        }
+        .manual_btn {
+            max-width: 150px;
+            height: 4rem;
+        }
+
+        button:disabled {
+            background-color:rgb(87, 87, 87);
+            color:rgb(163, 163, 163);
+        }
+
+        p {
+            flex: 3;    
+        }
+
+        #auto_p {
+            color: grey;
+        }
+    }
+
+    #auto_step {
+        flex-direction: column;
+    }
+    
+    #auto_reset_wrapper {
+        border-bottom: none;
+        flex-direction: column;
+
+        #auto_reset {
+            background-color: indianred;
+        }
+    
+        #auto_reset:disabled {
+            background-color:rgb(87, 87, 87);
+            color:rgb(163, 163, 163);
+        }
+    }
+
+    .content {
+        max-width: 800px;
+        padding: 1rem;
+        border-bottom: 1px solid rgb(60, 60, 60);
+        display: flex;
+        flex-direction: column;
+        align-items: center;  
+        
+        a {
+            margin-top: 2rem;
+            color:lightblue;
+        }
+    }
+
+    #manual_reset_wrapper {
+        border-bottom: none;
+    
+        #manual_reset {
+            background-color: indianred;
+        }
+        #manual_reset:disabled {
+            background-color:rgb(87, 87, 87);
+            color:rgb(163, 163, 163);
+        }
+    }
+}
+
+#auto_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        .step {
+            flex-direction: column;
+
+            button {
+                width: 150px;
+                min-height: 3rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 414px) {
+    body .container {
+        padding: 0;
+    }
+}
