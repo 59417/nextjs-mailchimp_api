@@ -2,6 +2,10 @@
     padding: 1rem;
     width: 100%;
 
+    button:hover {
+        cursor: pointer;
+    }
+
     .step {
         display: flex;
         align-items: center;
