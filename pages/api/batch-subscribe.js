@@ -24,7 +24,6 @@ const postData = {
 const batchSubscribe = async (req, res) => {
 
     const { list_id } = JSON.parse(JSON.stringify(req.body.body));
-    if (!list_id) { console.log('no req data', req.body) };
 
     const client = require("@mailchimp/mailchimp_marketing");
     

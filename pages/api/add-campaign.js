@@ -13,15 +13,7 @@ const postData = {
 
 const addCampaign = async (req, res) => {
 
-    // const aa = process.env.HOSTNAME;
-    // const bb = process.env.APIKEY;
-    // const cc = process.env.EMAILA;
-    // const dd = process.env.EMAILB;
-    // const ee = process.env.EMAILC;
-
-
     const { list_id, template_id } = JSON.parse(JSON.stringify(req.body.body));
-    if (!list_id || !template_id) { console.log('no req data', req.body) }
     postData.recipients.list_id = list_id;
     postData.settings.template_id = template_id;
 

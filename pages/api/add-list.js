@@ -10,7 +10,7 @@ const postData = {
     },
     campaign_defaults: {
         from_name: "CYC",
-        from_email: "sun313131@gmail.com",
+        from_email: process.env.HOSTEMAIL,
         subject: "Test subject",
         language: "en",
     }
